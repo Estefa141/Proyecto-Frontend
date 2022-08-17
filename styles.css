@@ -148,6 +148,8 @@ nav {
     position: absolute;
     padding: 24px;
     top: 60px;
+    left: 0;
+    width: 100%;
 }
 
 .mobile-menu a {
@@ -193,13 +195,16 @@ nav {
 .aside {
     background-color: var(--white);
     width: 360px;
-    padding: 0 24px;
     box-sizing: border-box;
     position: absolute;
     right: 0;
 }
 
 /* ShoppingCart */
+
+#shoppingCartContainer {
+    padding: 0 24px;
+}
 
 .title-container {
     display: flex;
@@ -380,23 +385,23 @@ nav {
     object-fit: cover;
 }
 
-.product-info {
+.product-card .product-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
 }
 
-.product-info figure img {
+.product-card .product-info figure img {
     width: 35px;
     height: 35px;
 }
 
-.product-info figure {
+.product-card .product-info figure {
     margin: 0;
 }
 
-.product-info div p:nth-child(1) {
+.product-card .product-info div p:nth-child(1) {
     font-weight: bold;
     font-size: var(--md);
     margin-top: 0;
